@@ -22,3 +22,41 @@
 #top-bar .user-menu li:last-child{
 	border-right:0;
 }
+
+#wrapper,#top-bar{
+	background: #fff;
+	margin: 20px auto 20px auto;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+	padding:0px 10px;
+}
+.menu{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 5px solid #eb4800;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    filter: none;
+}
+.menu  ul li a {
+    font-size: 11px;
+    color: #111;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 14px;
+}
+.menu ul li a:hover{
+	background: red;
+}
+.menu-logo{
+	max-width:100px;
+}
