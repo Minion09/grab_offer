@@ -61,3 +61,7 @@
 	max-width: 26%;
 	margin: -6%;
 }
+
+#myCarousel > .item > img{
+	max-width: 20%;
+}
