@@ -1,6 +1,6 @@
 <?php
 
-$config = require './config.php';
+$config = require '../config.php';
 
 $pdo = new PDO(
     $config['connection'].';dbname='.$config['name'],
@@ -20,9 +20,9 @@ try {
             "password"=> $_POST["password"]
         ]
     );
+    header('Location: /users/sign_up.php');
 
 } catch (PDOException $e) {
+    var_dump($e->getMessage());
     throw new Exception('Something went wrong');
 }
-
-
