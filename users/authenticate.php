@@ -16,10 +16,10 @@ try {
     $user = reset($user);
     if($_POST['password'] == $user->password){
         $_SESSION['user_id'] = $user->id;
-        var_dump("sign in");
+        header('Location: /');
     } else {
         session_destroy();
-        var_dump("cant't sign in");
+        header('Location: /users/sign_in.php');
     }
 
 } catch (PDOException $e) {

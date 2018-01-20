@@ -2,4 +2,4 @@
 
 $view = 'about.view.php';
 
-require 'layout.view.php';
+require 'main.view.php';

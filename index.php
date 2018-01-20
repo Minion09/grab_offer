@@ -1,3 +1,5 @@
 <?php
+session_start();
 
-die(var_dump('this is index'));
+$view = 'dashboard.view.php';
+require './layouts/main.view.php';
