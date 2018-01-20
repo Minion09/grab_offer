@@ -46,20 +46,18 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="/">
                             <img class="menu-logo" src="../img/logo.png">
                         </a>
                     </div>
 
                     <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-2">
                         <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href="#">Best Seller <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">Top Seller</a>
-                            </li>
+
+                            <?php if($_SESSION['user_role'] == 'admin'): ?>
+                                <li><a href="/products/new.php">Add new product</a></li>
+                            <?php endif; ?>
+
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category <span class="caret"></span>
                                 </a>
