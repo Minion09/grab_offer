@@ -21,7 +21,7 @@ try {
             "product_img_link" => $_POST["product_img_link"]
         ]
     );
-    header('Location: /');
+    header('Location: /products/index.php');
 
 } catch (PDOException $e) {
     var_dump($e->getMessage());
