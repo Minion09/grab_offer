@@ -1,3 +1,7 @@
+create database learn_php;
+
+use learn_php;
+
 CREATE TABLE users (
               id INT NOT NULL AUTO_INCREMENT,
               PRIMARY KEY(id),

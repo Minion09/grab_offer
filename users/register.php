@@ -14,7 +14,8 @@ try {
             "password"=> $_POST["password"]
         ]
     );
-    header('Location: /users/sign_up.php');
+    $view = 'successfully_sign_up.view.php';
+    require '../layouts/main.view.php';
 
 } catch (PDOException $e) {
     var_dump($e->getMessage());

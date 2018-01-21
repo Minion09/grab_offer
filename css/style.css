@@ -62,12 +62,9 @@
 	margin: -6%;
 }
 
-#myCarousel .item img{
+.item img{
 	max-width: 90%;
 }
 
-#myCarousel-2 .item img{
-	max-width: 100%;
-}
 
 
