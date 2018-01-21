@@ -53,4 +53,12 @@
 .old-price{
 	text-decoration: line-through;
 }
+
+.card {
+	float: left;
+	width: 25%;
+	padding: .75rem;
+	margin-bottom: 2rem;
+	border: 0;
+}
 /* end product box */

@@ -1,7 +1,7 @@
 <div class="row">
     <div class="item">
-        <?php foreach($products as $product): ?>
-            <div class="col-md-3">
+        <?php foreach($products as $key => $product): ?>
+            <div class="card">
                 <div class="product-box">
                     <span class="sale_tag"></span>
                     <p>
@@ -16,6 +16,10 @@
                     <p class="price">$<?= $product->offered_price ?></p>
                 </div>
             </div>
+            <?php if(($key+1)%4 == 0): ?>
+                <div class="clearfix"></div>
+            <?php endif; ?>
         <?php endforeach; ?>
+        <div class="clearfix" />
     </div>
 </div>
