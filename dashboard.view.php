@@ -41,121 +41,43 @@
                             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/ladies-product/1.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
+                                        <?php foreach($products1 as $product): ?>
+                                            <div class="col-md-3">
+                                                <div class="product-box">
+                                                    <span class="sale_tag"></span>
+                                                    <p>
+                                                        <a href="#">
+                                                            <img src=<?= $product->product_img_link ?> alt="" />
+                                                        </a>
+                                                    </p>
+                                                    <a href="#" class="title"><?= $product->title ?></a>
+                                                    <br/>
+                                                    <a href="#" class="category"><?= $product->description ?></a>
+                                                    <p class="price">$<?= $product->price ?></p>
+                                                    <p class="price">$<?= $product->offered_price ?></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/ladies-product/2.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/ladies-product/3.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/ladies-product/4.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
+                                        <?php endforeach; ?>
                                     </div>
 
                                     <div class="item">
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/ladies-product/5.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
+                                        <?php foreach($products2 as $product): ?>
+                                            <div class="col-md-3">
+                                                <div class="product-box">
+                                                    <span class="sale_tag"></span>
+                                                    <p>
+                                                        <a href="#">
+                                                            <img src=<?= $product->product_img_link ?> alt="" />
+                                                        </a>
+                                                    </p>
+                                                    <a href="#" class="title"><?= $product->title ?></a>
+                                                    <br/>
+                                                    <a href="#" class="category"><?= $product->description ?></a>
+                                                    <p class="price">$<?= $product->price ?></p>
+                                                    <p class="price">$<?= $product->offered_price ?></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/ladies-product/6.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/ladies-product/7.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/ladies-product/8.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
+                                        <?php endforeach; ?>
                                     </div>
                                 </div>
                             </div>
@@ -185,121 +107,43 @@
                             <div id="myCarousel-2" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/jewellery/1.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
+                                        <?php foreach($recent_products1 as $product): ?>
+                                            <div class="col-md-3">
+                                                <div class="product-box">
+                                                    <span class="sale_tag"></span>
+                                                    <p>
+                                                        <a href="#">
+                                                            <img src=<?= $product->product_img_link ?> alt="" />
+                                                        </a>
+                                                    </p>
+                                                    <a href="#" class="title"><?= $product->title ?></a>
+                                                    <br/>
+                                                    <a href="#" class="category"><?= $product->description ?></a>
+                                                    <p class="price">$<?= $product->price ?></p>
+                                                    <p class="price">$<?= $product->offered_price ?></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/jewellery/2.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/jewellery/3.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/jewellery/4.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
+                                        <?php endforeach; ?>
                                     </div>
 
                                     <div class="item">
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/jewellery/5.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
+                                        <?php foreach($recent_products2 as $product): ?>
+                                            <div class="col-md-3">
+                                                <div class="product-box">
+                                                    <span class="sale_tag"></span>
+                                                    <p>
+                                                        <a href="#">
+                                                            <img src=<?= $product->product_img_link ?> alt="" />
+                                                        </a>
+                                                    </p>
+                                                    <a href="#" class="title"><?= $product->title ?></a>
+                                                    <br/>
+                                                    <a href="#" class="category"><?= $product->description ?></a>
+                                                    <p class="price">$<?= $product->price ?></p>
+                                                    <p class="price">$<?= $product->offered_price ?></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/jewellery/6.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/jewellery/7.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <span class="sale_tag"></span>
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="./images/jewellery/8.jpg" alt="" />
-                                                    </a>
-                                                </p>
-                                                <a href="#" class="title">Ut wisi enim ad</a>
-                                                <br/>
-                                                <a href="#" class="category">Commodo consequat</a>
-                                                <p class="price">$25.50</p>
-                                            </div>
-                                        </div>
+                                        <?php endforeach; ?>
                                     </div>
                                 </div>
                             </div>
