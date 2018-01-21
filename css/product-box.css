@@ -47,6 +47,6 @@
 .product-box p.price{
 	font-size:20px;
 	font-weight:300;
-	padding:10px 0;
+	margin-bottom: 0px;
 }
 /* end product box */

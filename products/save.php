@@ -1,13 +1,6 @@
 <?php
 
-$config = require '../config.php';
-
-$pdo = new PDO(
-    $config['connection'].';dbname='.$config['name'],
-    $config['username'],
-    $config['password'],
-    $config['options']
-);
+$pdo = require '../database_obj.php';
 
 try {
     $statement = $pdo->prepare("INSERT INTO products(title, description, price, offered_price, product_img_link)

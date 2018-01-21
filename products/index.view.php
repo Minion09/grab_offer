@@ -1,4 +1,5 @@
 <div class="row">
+    <div class="item">
     <?php foreach($products as $product): ?>
         <div class="col-md-3">
             <div class="product-box">
@@ -16,4 +17,5 @@
             </div>
         </div>
     <?php endforeach; ?>
+    </div>
 </div>

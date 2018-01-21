@@ -1,13 +1,7 @@
 <?php
 
-$config = require '../config.php';
+$pdo = require '../database_obj.php';
 
-$pdo = new PDO(
-    $config['connection'].';dbname='.$config['name'],
-    $config['username'],
-    $config['password'],
-    $config['options']
-);
 
 try {
     $statement = $pdo->prepare("INSERT INTO users(first_name, last_name, email, password)
