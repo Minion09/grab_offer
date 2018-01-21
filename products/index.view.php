@@ -12,7 +12,7 @@
                 <a href="#" class="title"><?= $product->title ?></a>
                 <br/>
                 <a href="#" class="category"><?= $product->description ?></a>
-                <p class="price">$<?= $product->price ?></p>
+                <p class="price old-price">$<?= $product->price ?></p>
                 <p class="price">$<?= $product->offered_price ?></p>
             </div>
         </div>

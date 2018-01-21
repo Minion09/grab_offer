@@ -1,12 +1,6 @@
 <?php
 session_start();
 
-//$array = [1,2,3];
-//list($array1, $array2) = array_chunk($array, 4);
-//var_dump($array1);
-////var_dump($array2);
-//die();
-
 $pdo = require './database_obj.php';
 
 try {

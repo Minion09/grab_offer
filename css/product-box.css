@@ -49,4 +49,8 @@
 	font-weight:300;
 	margin-bottom: 0px;
 }
+
+.old-price{
+	text-decoration: line-through;
+}
 /* end product box */

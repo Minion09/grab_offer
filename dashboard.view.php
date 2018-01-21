@@ -31,8 +31,9 @@
                             <h4>FEATURE PRODUCTS</h4>
                         </div>
                         <div class="col-mid-6 pull-right nav-controll">
-                            <a class="left" href="#myCarousel" data-slide="prev">Prev</a>
-                            <a class="right" href="#myCarousel" data-slide="next">Next</a>
+                            <a href="/products/index.php" class="bnt btn-sm btn-success">more</a>
+                            <a class="left btn btn-group-sm" href="#myCarousel" data-slide="prev">Prev</a>
+                            <a class="right btn btn-group-sm" href="#myCarousel" data-slide="next">Next</a>
                         </div>
                     </div>
 
@@ -53,7 +54,7 @@
                                                     <a href="#" class="title"><?= $product->title ?></a>
                                                     <br/>
                                                     <a href="#" class="category"><?= $product->description ?></a>
-                                                    <p class="price">$<?= $product->price ?></p>
+                                                    <p class="price old-price">$<?= $product->price ?></p>
                                                     <p class="price">$<?= $product->offered_price ?></p>
                                                 </div>
                                             </div>
@@ -73,7 +74,7 @@
                                                     <a href="#" class="title"><?= $product->title ?></a>
                                                     <br/>
                                                     <a href="#" class="category"><?= $product->description ?></a>
-                                                    <p class="price">$<?= $product->price ?></p>
+                                                    <p class="price old-price">$<?= $product->price ?></p>
                                                     <p class="price">$<?= $product->offered_price ?></p>
                                                 </div>
                                             </div>
@@ -88,6 +89,8 @@
         </div>
     </div>
 
+    <br>
+
     <div class="row">
         <div class="col-md-12">
             <div class="row">
@@ -97,8 +100,9 @@
                             <h4>LATEST PRODUCTS</h4>
                         </div>
                         <div class="col-mid-6 pull-right nav-controll">
-                            <a class="left" href="#myCarousel-2" data-slide="prev">Prev</a>
-                            <a class="right" href="#myCarousel-2" data-slide="next">Next</a>
+                            <a href="/products/index.php" class="bnt btn-sm btn-success">more</a>
+                            <a class="left btn btn-group-sm" href="#myCarousel-2" data-slide="prev">Prev</a>
+                            <a class="right btn btn-group-sm" href="#myCarousel-2" data-slide="next">Next</a>
                         </div>
                     </div>
 
@@ -119,7 +123,7 @@
                                                     <a href="#" class="title"><?= $product->title ?></a>
                                                     <br/>
                                                     <a href="#" class="category"><?= $product->description ?></a>
-                                                    <p class="price">$<?= $product->price ?></p>
+                                                    <p class="price old-price">$<?= $product->price ?></p>
                                                     <p class="price">$<?= $product->offered_price ?></p>
                                                 </div>
                                             </div>
@@ -139,7 +143,7 @@
                                                     <a href="#" class="title"><?= $product->title ?></a>
                                                     <br/>
                                                     <a href="#" class="category"><?= $product->description ?></a>
-                                                    <p class="price">$<?= $product->price ?></p>
+                                                    <p class="price old-price">$<?= $product->price ?></p>
                                                     <p class="price">$<?= $product->offered_price ?></p>
                                                 </div>
                                             </div>
