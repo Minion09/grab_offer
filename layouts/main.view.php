@@ -24,7 +24,7 @@
                 <div class="col-md-8">
                     <div class="account pull-right">
                         <ul class="user-menu">
-                            <?php if($_SESSION['user_id']): ?>
+                            <?php if(array_key_exists('user_id',$_SESSION)): ?>
                                 <li><a href="/users/sign_out.php">Sign Out</a></li>
                             <?php else: ?>
                                 <li><a href="/users/sign_up.php">Sign up</a></li>
@@ -54,7 +54,7 @@
                     <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-2">
                         <ul class="nav navbar-nav">
 
-                            <?php if($_SESSION['user_role'] == 'admin'): ?>
+                            <?php if(array_key_exists('user_role', $_SESSION) && $_SESSION['user_role'] == 'admin'): ?>
                                 <li><a href="/products/new.php">Add new product</a></li>
                             <?php endif; ?>
 
